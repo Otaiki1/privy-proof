@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Component, useEffect } from "react";
 import Fullpage, {
     FullPageSections,
@@ -238,7 +238,6 @@ export default function Home() {
                         style={{
                             background: "#1a1919",
                             height: "100vh",
-        
                         }}
                     >
                         <div className="py-96 parallax-item">
