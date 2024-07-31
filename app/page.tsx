@@ -29,7 +29,7 @@ interface CardProps {
 
 const Card = ({ className, image, heading, body }: CardProps) => {
     return (
-        <div className={clsx("p-12 bg-[#1a1919] parallax-item", className)}>
+        <div className={clsx("p-12 bg-[#000] parallax-item", className)}>
             <div className="mt-24 flex w-[80%] mx-auto items-center space-x-8">
                 <div className="w-[30%]">
                     <Image
@@ -95,7 +95,7 @@ export default function Home() {
                 <FullPageSections>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
@@ -138,14 +138,14 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
                         }}
                     >
-                        <div className="p-12 bg-[#1a1919]">
+                        <div className="p-12 bg-[#000]">
                             <h1 className="w-full text-center text-white">
                                 {" "}
                                 At Privy Proof
@@ -165,7 +165,7 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
@@ -181,7 +181,7 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
@@ -196,7 +196,7 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
@@ -212,14 +212,14 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
                         }}
                     >
-                        <div className="p-12 bg-[#1a1919] flex flex-col space-y-8 justify-center items-center parallax-item">
+                        <div className="p-12 bg-[#000] flex flex-col space-y-8 justify-center items-center parallax-item">
                             <div className="my-24">
                                 <h1
                                     className={`${crimsonText.className} text-4xl text-white`}
@@ -236,7 +236,7 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                         }}
                     >
@@ -253,7 +253,7 @@ export default function Home() {
                     </FullpageSection>
                     <FullpageSection
                         style={{
-                            background: "#1a1919",
+                            background: "#000",
                             height: "100vh",
                             display: "flex",
                             justifyContent: "center",
