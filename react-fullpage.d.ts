@@ -1,24 +1,26 @@
-// react-fullpage.d.ts
+// src/react-fullpage.d.ts
 
 declare module "@ap.cx/react-fullpage" {
-    import { ReactNode } from "react";
-
-    export interface FullpageProps {
-        children: ReactNode;
-    }
-
-    export function Fullpage(props: FullpageProps): JSX.Element;
+    import * as React from "react";
 
     export interface FullPageSectionsProps {
-        children: ReactNode;
+        children: React.ReactNode;
     }
 
-    export function FullPageSections(props: FullPageSectionsProps): JSX.Element;
+    export const FullPageSections: React.FC<FullPageSectionsProps>;
 
     export interface FullpageSectionProps {
-        children: ReactNode;
         style?: React.CSSProperties;
+        children: React.ReactNode;
     }
 
-    export function FullpageSection(props: FullpageSectionProps): JSX.Element;
+    export const FullpageSection: React.FC<FullpageSectionProps>;
+
+    export interface FullpageProps {
+        goto?: () => void;
+        children: React.ReactNode;
+    }
+
+    const Fullpage: React.FC<FullpageProps>;
+    export default Fullpage;
 }
